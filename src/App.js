@@ -15,6 +15,9 @@ import HocCounter from "./components/HOC/HocCounter";
 import HoverCounter from "./components/HOC/HoverCounter";
 import ClickCounter from "./components/HOC/ClickCounter";
 
+import PureClassComponent from "./components/PureComponent/PureClassComponent";
+import CounterComponent from "./components/PureComponent/CounterComponent";
+
 // Styles
 import { GlobalStyle } from "./GlobalStyle";
 
@@ -34,11 +37,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Home />
-      <GlobalStyle />
+      <GlobalStyle /> */}
 
-      <Hello ref={ref} />
+      {/* PureComponent */}
+      <PureClassComponent />
+      <CounterComponent />
+
+      {/* HOC */}
+
+      {/* <Hello ref={ref} />
       <button onClick={clickHandler}>Focus Input</button>
       <UpdatedBorder />
       <hr />
@@ -46,7 +55,7 @@ const App = () => {
       <hr />
       <UpdatedHoverCounter name="Naveen" />
       <hr />
-      <UpdatedClickCounter />
+      <UpdatedClickCounter /> */}
     </div>
   );
 };
