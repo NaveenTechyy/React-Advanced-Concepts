@@ -19,12 +19,14 @@ import ClickCounter from "./components/HOC/ClickCounter";
 import { GlobalStyle } from "./GlobalStyle";
 
 const App = () => {
+  ///Forward ref on Hello.js
   const ref = useRef();
 
   const clickHandler = () => {
     ref.current.focus();
   };
 
+  ///HOC
   const UpdatedBorder = EnhancedBorder(Hello);
   const UpdatedBorderTest = EnhancedBorder(Test);
   const UpdatedHoverCounter = HocCounter(HoverCounter);
