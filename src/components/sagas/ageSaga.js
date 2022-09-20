@@ -1,5 +1,5 @@
 import { delay } from "redux-saga";
-import { takeLatest, put, takeEvery } from "redux-saga/effects";
+import { takeLatest, put } from "redux-saga/effects";
 
 function* ageUpAsync() {
   yield delay(4000);
