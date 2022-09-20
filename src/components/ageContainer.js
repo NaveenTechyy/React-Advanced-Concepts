@@ -1,20 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import "../App.css";
 import { connect } from "react-redux";
 
-class AgeContainer extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="Age-label">
-          your age: <span>{this.props.age}</span>
-        </div>
-        <button onClick={this.props.onAgeUp}>Age UP</button>
-        <button onClick={this.props.onAgeDown}>Age Down</button>
+const AgeContainer = props => {
+  const { age, onAgeUp, onAgeDown } = props;
+  return (
+    <div className="App">
+      <div className="Age-label">
+        your age: <span>{age}</span>
       </div>
-    );
-  }
-}
+      <button onClick={onAgeUp}>Age UP</button>
+      <button onClick={onAgeDown}>Age Down</button>
+    </div>
+  );
+};
 
 const mapStateToProps = state => {
   return {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import AgeContainer from "./components/ageContainer";
+import AgeContainer from "./components/AgeContainer";
 import UserContainer from "./components/UserContainer";
 
 class App extends Component {
